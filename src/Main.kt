@@ -1,14 +1,16 @@
+import graphs.Name000_search_sort
+import graphs.Name000_search_sort.binarySearch
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    // Name000
+    println("Name000: insertionSort" + Name000_search_sort.insertionSort())
+val arr = arrayListOf(-4,23,1,3,2,5,6,7,8,44,55,2,34,22,14,5,6,2,2,7,8,9787,7,4,2,1,3,55,66,4,54,343,42)
+    Name000_search_sort.mergeSort(arr)
+    println("Name000: mergeSort" + arr)
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+    Name000_search_sort.binarySearch()
+
+    // end Name000
 }
